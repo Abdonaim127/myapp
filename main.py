@@ -4,7 +4,7 @@ import pandas as pd
 
 data = pd.read_json('results.json')
 print(data.shape)
-org_data = pd.read_json('modera_listings.json')
+org_data = pd.read_json('listings.json')
 print(org_data.shape)
 def format_json(json_data):
     return json.dumps(json_data, indent=4)
